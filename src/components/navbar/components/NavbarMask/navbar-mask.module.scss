@@ -1,0 +1,14 @@
+@use '@/styles/variables';
+
+.mask {
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  left: -1%;
+  bottom: -3px;
+
+  width: 102%;
+  height: 100%;
+}

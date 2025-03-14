@@ -1,0 +1,39 @@
+@use './variables';
+
+@mixin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(100% - 32px);
+  min-height: 53px;
+  height: 53px;
+
+  border: 2px solid variables.$orange;
+  border-radius: 6px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  -webkit-box-shadow:
+    inset 0 0 6px 0 variables.$orange,
+    0 0 6px 0 variables.$orange;
+  -moz-box-shadow:
+    inset 0 0 6px 0 variables.$orange,
+    0 0 6px 0 variables.$orange;
+  box-shadow:
+    inset 0 0 6px 0 variables.$orange,
+    0 0 6px 0 variables.$orange;
+
+  text-decoration: none;
+
+  p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+
+    color: variables.$white;
+  }
+}

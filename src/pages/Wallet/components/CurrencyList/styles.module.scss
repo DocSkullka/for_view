@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    margin-top: 20px;
+  }
+
+  .hidden {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .hiddenLabel {
+      color: #9A9A9A;
+    }
+
+    .hiddenArrow {
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.06px;
+      text-align: left;
+      color: #9A9A9A;
+      background: #9A9A9A1A;
+      border-radius: 4px;
+    }
+  }
+}

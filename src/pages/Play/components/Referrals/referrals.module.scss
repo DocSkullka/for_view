@@ -1,0 +1,219 @@
+@use '@/styles/variables';
+
+.referrals {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 16px;
+
+  padding-bottom: 3px;
+
+  overflow: hidden;
+}
+
+
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  p:first-of-type {
+    font-size: 82px;
+    font-weight: 500;
+    line-height: 57px;
+    color: #F65535;
+  }
+
+  p:last-of-type {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+
+    -webkit-background-clip: text;
+
+  }
+}
+
+.bottom {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+
+  p:first-of-type {
+    display: flex;
+    gap: 5px;
+
+    span:last-of-type {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      background-image: linear-gradient(
+        255.36deg,
+        rgba(225, 245, 249, 0.5) 33.34%,
+        rgba(249, 252, 253, 0.5) 40.68%,
+        rgba(210, 233, 238, 0.5) 44.76%,
+        rgba(216, 238, 242, 0.5) 49.92%,
+        rgba(225, 245, 249, 0.5) 56.83%,
+        rgba(225, 245, 249, 0.5) 78.62%
+      );
+    }
+  }
+
+  p:last-of-type {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-image: linear-gradient(
+      255.36deg,
+      rgba(225, 245, 249, 0.5) 33.34%,
+      rgba(249, 252, 253, 0.5) 40.68%,
+      rgba(210, 233, 238, 0.5) 44.76%,
+      rgba(216, 238, 242, 0.5) 49.92%,
+      rgba(225, 245, 249, 0.5) 56.83%,
+      rgba(225, 245, 249, 0.5) 78.62%
+    );
+  }
+}
+
+.speed {
+  position: absolute;
+  right: 0px;
+  bottom: -90px;
+  z-index: 100;
+
+  width: 216px;
+  height: 216px;
+
+  &-point-1 {
+    position: absolute;
+    top: 100px;
+    left: 1px;
+
+    transform: rotate(94deg);
+  }
+
+  &-point-2 {
+    position: absolute;
+    top: 70px;
+    left: 6px;
+
+    transform: rotate(112deg);
+  }
+
+  &-point-3 {
+    position: absolute;
+    top: 43px;
+    left: 20px;
+
+    transform: rotate(125deg);
+  }
+
+  &-point-4 {
+    position: absolute;
+    top: 21px;
+    left: 42px;
+
+    transform: rotate(141deg);
+  }
+
+  &-point-5 {
+    position: absolute;
+    top: 5px;
+    left: 72px;
+
+    transform: rotate(164deg);
+  }
+
+  &-point-6 {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  &-point-7 {
+    position: absolute;
+    top: 5px;
+    right: 72px;
+
+    transform: rotate(-164deg);
+  }
+
+  &-point-8 {
+    position: absolute;
+    top: 21px;
+    right: 42px;
+
+    transform: rotate(-141deg);
+  }
+
+  &-point-9 {
+    position: absolute;
+    top: 43px;
+    right: 20px;
+
+    transform: rotate(-125deg);
+  }
+
+  &-point-10 {
+    position: absolute;
+    top: 70px;
+    right: 6px;
+
+    transform: rotate(-112deg);
+  }
+}
+
+.point {
+  position: absolute;
+  top: -15%;
+  left: 37%;
+  transform: rotate(-35.5deg) translateX(-50%);
+
+  width: 65px;
+  height: 135px;
+
+  z-index: 102;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+
+    z-index: 10000;
+
+    transform: rotate(-102deg);
+  }
+}
+
+.dots {
+  position: absolute;
+  top: -20px; // Поднимите выше, если нужно
+  left: 51.65%;
+  width: 210px;
+  height: 200px;
+  transform: translateX(-50%);
+  z-index: 101; // Убедитесь, что dots находится выше glow
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  right: 30px;
+
+  width: 150px;
+  height: 170px;
+
+
+  transform: scale(1.3);
+}

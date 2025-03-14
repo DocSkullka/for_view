@@ -1,0 +1,12 @@
+@use 'sass:color';
+@use '@/styles/variables';
+
+.minigame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+

@@ -1,0 +1,96 @@
+.currencyItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 15%;
+  }
+
+  .name {
+    margin-left: 8px;
+    min-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .label {
+
+    }
+
+    .subLabel {
+      color: #9A9A9A;
+    }
+  }
+
+  .balance {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .label {
+
+    }
+
+    .subLabel {
+      color: #9A9A9A;
+      display: grid;
+      grid-template: 'a b';
+      grid-gap: 4px;
+      align-items: center;
+    }
+  }
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin-left: 20px;
+  }
+
+  .cardBody {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-radius: 4px;
+    background: #9A9A9A1A;
+    padding: 0 10px;
+
+    .cardIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10%;
+    }
+
+    .cardLabel {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@use '@/styles/variables';
+
+.navbar {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: -3%;
+
+  z-index: 10;
+
+  height: 120px;
+  width: auto;
+
+
+  svg {
+    width: 100%;
+  }
+}
+
+.item {
+  position: relative;
+
+  width: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+
+
+  svg {
+    width: 30px;
+    height: 30px;
+
+    margin-bottom: 4px;
+
+    path {
+      fill: variables.$gray;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: center;
+
+    color: variables.$gray;
+  }
+}
+
+.item-active {
+
+
+  svg path {
+    fill: variables.$white;
+  }
+
+  p {
+    color: variables.$white;
+  }
+
+
+}

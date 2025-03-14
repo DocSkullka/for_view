@@ -1,0 +1,68 @@
+@use '@/styles/variables';
+@use '@/styles/elements';
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  -webkit-background-clip: text;
+
+  color: #FFFFFF;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: center;
+
+  padding: 0 50px;
+}
+
+.reward {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  width: 100%;
+
+  &-text {
+    position: relative;
+    z-index: 10;
+
+    width: fit-content;
+
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 140px;
+    text-align: center;
+
+    -webkit-background-clip: text;
+
+    color: #FFFFFF;
+  }
+
+  &-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 140%;
+    pointer-events: none;
+  }
+}

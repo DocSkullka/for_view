@@ -1,0 +1,122 @@
+@use 'sass:color';
+@use '@/styles/variables';
+
+.activity {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 22px 16px 12px;
+
+  overflow-y: auto;
+}
+
+.levels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  width: 100%;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 12px;
+
+    &-count {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      text-align: left;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 19.2px;
+        text-align: left;
+        white-space: nowrap;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-image: linear-gradient(
+          255.36deg,
+          rgba(225, 245, 249, 0.5) 33.34%,
+          rgba(249, 252, 253, 0.5) 40.68%,
+          rgba(210, 233, 238, 0.5) 44.76%,
+          rgba(216, 238, 242, 0.5) 49.92%,
+          rgba(225, 245, 249, 0.5) 56.83%,
+          rgba(225, 245, 249, 0.5) 78.62%
+        );
+      }
+    }
+  }
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 12px;
+
+  
+
+  p:first-of-type {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  p:last-of-type {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-image: linear-gradient(
+      255.36deg,
+      rgba(225, 245, 249, 0.5) 33.34%,
+      rgba(249, 252, 253, 0.5) 40.68%,
+      rgba(210, 233, 238, 0.5) 44.76%,
+      rgba(216, 238, 242, 0.5) 49.92%,
+      rgba(225, 245, 249, 0.5) 56.83%,
+      rgba(225, 245, 249, 0.5) 78.62%
+    );
+  }
+}
+
+.refs {
+  margin: 0;
+
+  width: 100%;
+
+  &-bg {
+    background: none;
+  }
+}
+
+
+.highlighted {
+  position: relative;
+  z-index: 1002;
+}

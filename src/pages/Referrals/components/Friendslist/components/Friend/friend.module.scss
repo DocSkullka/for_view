@@ -1,0 +1,122 @@
+@use '@/styles/variables';
+
+.leaderContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 18px 0 4px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p:first-of-type {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    p:last-of-type {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: left;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      background-image: linear-gradient(
+        255.36deg,
+        rgba(225, 245, 249, 0.5) 33.34%,
+        rgba(249, 252, 253, 0.5) 40.68%,
+        rgba(210, 233, 238, 0.5) 44.76%,
+        rgba(216, 238, 242, 0.5) 49.92%,
+        rgba(225, 245, 249, 0.5) 56.83%,
+        rgba(225, 245, 249, 0.5) 78.62%
+      );
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+
+  p:first-of-type {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: right;
+  }
+
+  p:last-of-type {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: right;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-image: linear-gradient(
+      255.36deg,
+      rgba(225, 245, 249, 0.5) 33.34%,
+      rgba(249, 252, 253, 0.5) 40.68%,
+      rgba(210, 233, 238, 0.5) 44.76%,
+      rgba(216, 238, 242, 0.5) 49.92%,
+      rgba(225, 245, 249, 0.5) 56.83%,
+      rgba(225, 245, 249, 0.5) 78.62%
+    );
+  }
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+
+  color: variables.$dark;
+  background: linear-gradient(
+    256.35deg,
+    #e1f5f9 -99.76%,
+    #f9fcfd -57.2%,
+    #d2e9ee -33.59%,
+    #d8eef2 -3.66%,
+    #b8eaf4 14.18%,
+    #e1f5f9 36.42%,
+    #e1f5f9 162.72%
+  );
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 20px;
+}

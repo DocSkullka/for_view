@@ -1,0 +1,81 @@
+@use 'sass:color';
+@use '@/styles/variables';
+
+.mask {
+  position: relative;
+  display: flex;
+  height: 42.5vh;
+}
+
+@media (max-height: 860px) {
+  .mask {
+    height: 40vh; // Высота для устройств с высотой экрана <= 860px
+  }
+}
+
+@media (max-height: 820px) {
+  .mask {
+    height: 38vh;
+  }
+
+}
+
+@media (max-height: 780px) {
+  .mask {
+    height: 36vh;
+
+    .content{
+      top: 26%;
+    }
+  }
+}
+
+
+@media (max-height: 740px) {
+  .mask {
+    height: 34vh;
+
+    .content{
+      top: 25%;
+    }
+  }
+  
+}
+
+@media (max-height: 700px) {
+  .mask {
+    height: 32vh;
+  }
+}
+
+@media (max-height: 660px) {
+  .mask {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 590px) {
+  .mask {
+    height: 30vh;
+  }
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 27.3%;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.content img {
+  height: 57vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+
+

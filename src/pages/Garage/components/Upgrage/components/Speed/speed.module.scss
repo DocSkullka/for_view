@@ -1,0 +1,63 @@
+.engineUpgradeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1b1e23;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .label {
+    font-size: 12px;
+    color: #c2c2c2;
+    margin-bottom: 5px;
+  }
+  
+  .progressBar {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    background-color: #2a2d35;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #f29d35;
+  }
+  
+  .value {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .upgradeButton {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #2a2d35;
+    color: #c2c2c2;
+    border: 1px solid #f29d35;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upgradeButton:hover {
+    background: linear-gradient(90deg, #f29d35, #ffe082);
+    color: #1b1e23;
+  }
+
+  .gearBoxUpgradeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1b1e23;
+    padding: 10px;
+    width: 100%;
+  }
+  

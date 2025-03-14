@@ -1,0 +1,10 @@
+.balance {
+  display: flex;
+  flex-direction: row;
+  font-size: 48px;
+  font-weight: 500;
+
+  .fraction {
+    opacity: 0.2;
+  }
+}

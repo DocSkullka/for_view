@@ -1,0 +1,180 @@
+@use '@/styles/variables';
+@use '@/styles/elements';
+
+.referrals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+
+  padding: 40px 0 181px;
+}
+
+.main {
+  position: relative;
+
+  display: flex;
+  margin: 2px 0 4px;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: 20;
+
+    height: 20px;
+    width: 100%;
+
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+    z-index: 20;
+
+    height: 20px;
+    width: 100%;
+
+
+
+    content: '';
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0 16px;
+
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+
+
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -14px;
+  right: -14px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 100px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+
+}
+
+.tabs {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+
+  padding: 0 0 6px;
+
+  button {
+    position: relative;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    padding: 0;
+
+    border: none;
+
+    cursor: pointer;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+
+    height: 2px;
+    width: 100%;
+
+    border-radius: 4px;
+
+    background: linear-gradient(
+      255.36deg,
+      rgba(225, 245, 249, 0.3) 33.34%,
+      rgba(249, 252, 253, 0.3) 40.68%,
+      rgba(216, 238, 242, 0.3) 49.92%,
+      rgba(184, 234, 244, 0.3) 53%,
+      rgba(225, 245, 249, 0.3) 56.83%,
+      rgba(225, 245, 249, 0.3) 78.62%
+    );
+
+    content: '';
+  }
+}
+
+.tab {
+  background: rgba(255, 255, 255, 0.2);
+
+  &-active {
+    background: #FFFFFF;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+
+      height: 2px;
+      width: 100%;
+
+      border-radius: 4px;
+
+      background-image: linear-gradient(
+        255.36deg,
+        #e1f5f9 33.34%,
+        #f9fcfd 40.68%,
+        #d2e9ee 44.76%,
+        #d8eef2 49.92%,
+        #e1f5f9 56.83%,
+        #e1f5f9 78.62%
+      );
+
+      content: '';
+    }
+  }
+}
+
+
+

@@ -1,0 +1,138 @@
+@use '@/styles/variables';
+
+.leaderContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.leader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px 0 4px;
+  flex: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spot {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-image: linear-gradient(
+    255.36deg,
+    #e1f5f9 33.34%,
+    #f9fcfd 40.68%,
+    #d8eef2 49.92%,
+    #e1f5f9 56.83%,
+    #e1f5f9 78.62%
+  );
+
+  &-own {
+    -webkit-text-fill-color: variables.$dark;
+
+    color: variables.$dark;
+    
+
+    background-image: none;
+  }
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+
+  &-own {
+    color: variables.$dark;
+  }
+}
+
+.amount {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-image: linear-gradient(
+    255.36deg,
+    rgba(225, 245, 249, 0.5) 33.34%,
+    rgba(249, 252, 253, 0.5) 40.68%,
+    rgba(210, 233, 238, 0.5) 44.76%,
+    rgba(216, 238, 242, 0.5) 49.92%,
+    rgba(225, 245, 249, 0.5) 56.83%,
+    rgba(225, 245, 249, 0.5) 78.62%
+  );
+
+  &-own {
+    -webkit-text-fill-color: rgba(16, 16, 16, 0.6);
+
+    color: variables.$dark;
+
+    background-image: none;
+  }
+}
+
+.kol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 27px;
+
+  border-radius: 6px;
+
+  background: #FFFFFF;
+
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+
+  background: #FFFFFF;
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 20px;
+}

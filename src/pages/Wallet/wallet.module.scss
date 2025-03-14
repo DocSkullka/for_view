@@ -1,0 +1,33 @@
+.balance {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+  .label {
+    margin-right: 8px;
+  }
+
+  .gray {
+    margin-right: 8px;
+    color: #9A9A9A;
+  }
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.pageWrapper {
+  margin: 24px 16px 0 16px;
+}

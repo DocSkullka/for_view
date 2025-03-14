@@ -1,0 +1,55 @@
+.mask {
+  position: fixed;
+  top: calc(100% - 158px);
+  left: 16px; /* Отступ слева */
+  right: 16px; /* Отступ справа */
+  width: auto; /* Автоматическая ширина */
+  display: inline-block;
+  z-index: 20;
+}
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .friends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #211110;
+  }
+
+  
+
+  

@@ -1,0 +1,111 @@
+{
+  "name": "ipoon-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@pmndrs/branding": "^0.0.8",
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^9.114.4",
+    "@react-three/fiber": "^8.0.12",
+    "@rematch/core": "^2.2.0",
+    "@supabase/supabase-js": "^1.30.4",
+    "@telegram-apps/react-router-integration": "^1.0.1",
+    "@telegram-apps/sdk": "^2.9.0",
+    "@telegram-apps/sdk-react": "^1.1.0",
+    "@tonconnect/sdk": "^3.0.5",
+    "@types/three": "^0.169.0",
+    "axios": "^1.7.9",
+    "axios-cache-interceptor": "^1.6.2",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.12",
+    "framer-motion": "^11.15.0",
+    "immer": "^10.1.1",
+    "inter-ui": "^4.0.2",
+    "leva": "^0.9.35",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lru-cache": "^10.4.3",
+    "notistack": "^3.0.1",
+    "react": "^18.3.1",
+    "react-colorful": "^5.6.1",
+    "react-dom": "^18.3.1",
+    "react-google-charts": "^5.2.1",
+    "react-qr-code": "^2.0.15",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.24.0",
+    "redux": "^5.0.1",
+    "redux-logger": "^3.0.6",
+    "rematch": "^0.1.3",
+    "sass": "^1.77.6",
+    "serve": "^14.2.3",
+    "styled-components": "^6.1.13",
+    "three": "^0.139.0",
+    "throttleit": "^2.1.0",
+    "use-asset": "^1.0.4",
+    "use-immer": "^0.10.0",
+    "zustand": "^3.7.0"
+  },
+  "overrides": {
+    "@telegram-apps/sdk": "^2.9.0",
+    "@telegram-apps/react-router-integration": "^1.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^20.14.8",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.139.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "globals": "^15.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "stylelint": "^16.6.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-high-performance-animation": "^1.10.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.3.2",
+    "three-stdlib": "^2.9.1",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.14.1",
+    "vite": "^5.3.1",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,ts,tsx,scss,css}": [
+      "prettier --single-quote --write"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

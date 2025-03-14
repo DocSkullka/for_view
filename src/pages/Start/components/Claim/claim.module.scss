@@ -1,0 +1,55 @@
+@use '@/styles/variables';
+@use '@/styles/elements';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  -webkit-background-clip: text;
+
+  color: #FFFFFF;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: center;
+
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.claims {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  padding: 0 16px;
+}
+
+.action {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+
+  svg {
+    display: block;
+  }
+}
+
+

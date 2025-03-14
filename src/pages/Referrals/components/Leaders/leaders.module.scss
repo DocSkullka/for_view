@@ -1,0 +1,191 @@
+@use 'sass:color';
+@use '@/styles/variables';
+@use '@/styles/elements';
+
+.leaders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  height: 100vh;
+
+  padding: 0 0 132px;
+
+  &-list {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 22px 16px 12px;
+
+    overflow-y: auto;
+  }
+}
+
+.main {
+  position: relative;
+
+  display: flex;
+  margin: 2px 0 4px;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: 20;
+
+    height: 20px;
+    width: 100%;
+
+    background: linear-gradient(
+      to bottom,
+      variables.$bg-main,
+      color.change(variables.$bg-main, $alpha: 0)
+    );
+
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+    z-index: 20;
+
+    height: 20px;
+    width: 100%;
+
+    background: linear-gradient(
+      to top,
+      variables.$bg-main,
+      color.change(variables.$bg-main, $alpha: 0)
+    );
+
+    content: '';
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.own {
+  position: fixed;
+  left: 16px;
+  z-index: 1000;
+
+  width: calc(100% - 32px);
+
+  background: variables.$bg-main;
+
+  &-hidden {
+    display: none;
+  }
+
+  &-up {
+    top: 150px;
+
+    &::before {
+      bottom: -20px;
+
+      background: linear-gradient(
+        to bottom,
+        variables.$bg-main,
+        color.change(variables.$bg-main, $alpha: 0)
+      );
+    }
+  }
+
+  &-down {
+    bottom: 170px;
+
+    &::before {
+      top: -20px;
+
+      background: linear-gradient(
+        to top,
+        variables.$bg-main,
+        color.change(variables.$bg-main, $alpha: 0)
+      );
+    }
+  }
+
+  &::before {
+    position: absolute;
+
+    left: -500px;
+    z-index: 20;
+
+    height: 20px;
+    width: calc(100% + 1000px);
+
+    content: '';
+  }
+}
+
+.own.highlighted{
+  position: absolute;
+}
+
+.question {
+  position: absolute;
+  width: 25px;
+  right: 16px;
+  top: 23px;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  cursor: pointer;
+
+  &:active {
+    animation: pulseQuestion 0.5s ease-in-out;
+  }
+
+}
+
+@keyframes pulseQuestion {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1001;
+}
+
+.highlighted {
+  position: relative;
+  z-index: 1002;
+}
+
+

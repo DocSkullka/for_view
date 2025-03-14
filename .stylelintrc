@@ -1,0 +1,215 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-rational-order"],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-high-performance-animation",
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "ignoreFiles": ["**/*.{js,jsx,ts,tsx}"],
+  "rules": {
+    "alpha-value-notation": [
+      "percentage",
+      {
+        "exceptProperties": ["opacity"]
+      }
+    ],
+    "annotation-no-unknown": [
+      true,
+      {
+        "ignoreAnnotations": ["default"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless", "first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else"]
+      }
+    ],
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-no-unknown": null,
+    "color-function-notation": "modern",
+    "color-hex-length": "short",
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["stylelint-commands"]
+      }
+    ],
+    "comment-no-empty": null,
+    "comment-whitespace-inside": "always",
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "custom-media-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected custom media query name to be kebab-case"
+      }
+    ],
+    "custom-property-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected custom property name to be kebab-case"
+      }
+    ],
+    "declaration-block-single-line-max-declarations": 1,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-declaration", "after-comment", "inside-single-line-block"]
+      }
+    ],
+    "font-family-name-quotes": "always-where-recommended",
+    "function-name-case": "lower",
+    "function-no-unknown": null,
+    "function-url-quotes": "always",
+    "hue-degree-notation": "angle",
+    "keyframes-name-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected keyframe name to be kebab-case"
+      }
+    ],
+    "length-zero-no-unit": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "no-eol-whitespace": null,
+    "no-irregular-whitespace": true,
+    "no-invalid-position-at-import-rule": [
+      true,
+      {
+        "ignoreAtRules": ["use"]
+      }
+    ],
+    "number-max-precision": 4,
+    "order/properties-order": [],
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": true
+      }
+    ],
+    "plugin/no-low-performance-animation-properties": true,
+    "property-no-vendor-prefix": true,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "selector-attribute-quotes": "always",
+    "selector-class-pattern": [
+      "[a-z]+((\\d)|([A-Z0-9][a-z0-9]+))*([A-Z])?",
+      {
+        "message": "Expected class selector to be camelCase"
+      }
+    ],
+    "selector-id-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected id selector to be kebab-case"
+      }
+    ],
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "horizontal"]
+      }
+    ],
+    "selector-type-case": "lower",
+    "shorthand-property-no-redundant-values": true,
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true,
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-if-no-null": true,
+    "scss/at-import-partial-extension": "never",
+    "scss/at-rule-no-unknown": true,
+    "scss/comment-no-empty": true,
+    "scss/declaration-nested-properties-no-divided-groups": true,
+    "scss/dollar-variable-no-missing-interpolation": true,
+    "scss/function-quote-no-quoted-strings-inside": true,
+    "scss/function-unquote-no-unquoted-strings-inside": true,
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/no-duplicate-mixins": true,
+    "scss/no-global-function-names": true,
+    "scss/operator-no-newline-after": true,
+    "scss/operator-no-newline-before": true,
+    "scss/operator-no-unspaced": true,
+    "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-else-closing-brace-space-after": "always-intermediate",
+    "scss/at-else-empty-line-before": "never",
+    "scss/at-else-if-parentheses-space-before": "always",
+    "scss/at-function-parentheses-space-before": "never",
+    "scss/at-function-pattern": [
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected function name to be kebab-case"
+      }
+    ],
+    "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-if-closing-brace-space-after": "always-intermediate",
+    "scss/at-mixin-argumentless-call-parentheses": "never",
+    "scss/at-mixin-parentheses-space-before": "never",
+    "scss/at-mixin-pattern": [
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected mixin name to be kebab-case"
+      }
+    ],
+    "scss/at-rule-conditional-no-parentheses": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-empty-line-before": [
+      "always",
+      {
+        "except": ["after-dollar-variable", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "scss/dollar-variable-pattern": [
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected variable to be kebab-case"
+      }
+    ],
+    "scss/double-slash-comment-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["between-comments", "stylelint-commands"]
+      }
+    ],
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["strip-unit", "linear-gradient"]
+      }
+    ],
+    "scss/percent-placeholder-pattern": [
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected placeholder to be kebab-case"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}

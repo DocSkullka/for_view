@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+$white: hsl(0deg 0% 100% / 100%);
+$gray: hsl(180deg 10% 26% / 100%);
+$yellow-light: hsl(54deg 88% 60% / 100%);
+$orange: hsl(25deg 95% 63% / 100%);
+$brown: hsl(4deg 35% 10% / 100%);
+$brown-deep: hsl(0deg 31% 12% / 100%);
+$dark: hsl(219deg 21% 13% / 100%);
+
+$bg-popover: color.change(hsl(219deg 21% 13% / 100%), $alpha: 0.98);
+$bg-main: hsl(209deg 39% 7% / 100%);
+$bg-opacity: color.change(hsl(296deg 76% 7% / 100%), $alpha: 0.5);
